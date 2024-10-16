@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios y Productos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS externo -->
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="my-4">Gestión de Usuarios y Productos</h1>
+
+        <h2>Agregar Usuario</h2>
+        <form id="userForm" class="mb-4">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre" id="userName" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" id="userEmail" required>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" placeholder="Edad" id="userAge" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Usuario</button>
+        </form>
+
+        <h2>Lista de Usuarios</h2>
+        <ul id="userList" class="list-group mb-4"></ul>
+
+        <h2>Agregar Producto</h2>
+        <form id="productForm" class="mb-4">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre del Producto" id="productName" required>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" placeholder="Precio" id="productPrice" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Categoría" id="productCategory" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Producto</button>
+        </form>
+
+        <h2>Lista de Productos</h2>
+        <ul id="productList" class="list-group mb-4"></ul>
+
+        <button id="generateReport" class="btn btn-success">Generar Reporte Resumido</button>
+        <pre id="report" class="mt-4 bg-light p-2"></pre>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
